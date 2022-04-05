@@ -12,11 +12,13 @@ Copy `dht_sensor.c` into your project. Add a header for `DHT_Init() and DHT_Samp
 
 ## API
 
-## void DHT_init(int gpio)
+## Init
+**void DHT_init(int gpio)**
 
 Call once to install the gpio isr service and initialize the gpio to the hold state.
 
-## bool DHT_sample(int gpio, double *p_humdity, double *p_temperature_c)
+## Sample
+**bool DHT_sample(int gpio, double *p_humdity, double *p_temperature_c)**
 
 Call to read the sensor.
 
